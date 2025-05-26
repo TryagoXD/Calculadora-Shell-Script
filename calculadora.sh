@@ -21,6 +21,8 @@ do
         
         echo "Resposta: $result"
     elif [ $op = 'r' ]; then
+        echo "($temp" > resultado.txt
+        temp=$(cat resultado.txt)
         read -p "$temp" n1
         let result=$temp$n1
         echo $result > resultado.txt
